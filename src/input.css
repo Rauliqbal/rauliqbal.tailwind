@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+      @apply font-josefin;
+   }
+
+   section {
+      @apply py-[120px];
+   }
+}
+
+@layer components {
+   .section-title {
+      @apply text-white text-4xl;
+   }
+
+   .desc {
+      @apply text-white text-lg mt-6;
+   }
+
+   .card {
+      @apply overflow-hidden bg-dark/40 rounded-md flex flex-col w-full md:w-[468px] gap-8 mx-auto border-white/0 border-2 hover:border-white/40 transition-all duration-500;
+   }
+
+   .card-title {
+      @apply text-white text-xl md:text-3xl capitalize font-DmSans font-semibold tracking-wider;
+   }
+}
