@@ -1,5 +1,6 @@
 module.exports = {
    content: ["./*.{html,js}"],
+   important: true,
    theme: {
       extend: {
          container: {
