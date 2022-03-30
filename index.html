@@ -15,6 +15,11 @@
       <link rel="icon" href="./src/images/favicon.png" type="image/x-icon" />
       <title>Rauliqbal WebDev</title>
    </head>
+   <style>
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+         background: #ffc107;
+      }
+   </style>
    <body class="bg-black">
       <!-- Header -->
       <header class="fixed left-0 right-0 z-50 w-full transition-all duration-500">
@@ -41,7 +46,7 @@
                      </li>
                      <li class="py-4 mx-3 md:py-0 md:hidden">
                         <div class="flex items-center text-white transition-all duration-300 hover:text-yellow-300">
-                           <a href="#" class="text-lg">let's connect</a>
+                           <a href="#footer" class="text-lg">let's connect</a>
                            <ion-icon class="ml-2" name="arrow-forward-outline"></ion-icon>
                         </div>
                      </li>
@@ -52,7 +57,7 @@
                <!-- Desktop:Lets connect -->
                <div class="hidden w-auto md:block">
                   <div class="flex items-center text-white hover:text-yellow-300">
-                     <a href="#" class="text-lg">let's connect</a>
+                     <a href="#footer" class="text-lg">let's connect</a>
                      <ion-icon class="relative inline-block ml-2" name="arrow-forward-outline"></ion-icon>
                   </div>
                </div>
@@ -207,13 +212,13 @@
 
       <!-- Blur Effect -->
       <span class="absolute blur-2xl -mt-[12rem] right-0 z-[-1] opacity-70">
-         <img class="w-[50rem]" src="./src/images/design/blur3.svg" alt="" />
+         <img src="./src/images/design/blur3.svg" alt="" />
       </span>
       <!-- Blur Effect -->
 
       <!-- START:Section Portfolio -->
       <section class="container">
-         <div class="px-4 py-10 md:p-10 bg-dark/40">
+         <div class="px-4 py-10 rounded-none md:rounded-md md:p-10 bg-dark/40">
             <div class="flex items-center justify-between">
                <h3 class="section-title">Our Portfolio</h3>
                <div class="flex items-center justify-center text-white transition-all duration-300 ease-in-out hover:text-yellow-300">
@@ -224,39 +229,91 @@
 
             <div class="flex flex-wrap gap-6 mt-8 md:gap-0">
                <!-- Card Portfolio -->
-               <div class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3">
+               <a href="https://travel-web-mri.vercel.app/" target="_blank" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
                   <div class="h-full overflow-hidden rounded-lg">
-                     <img class="object-cover object-center w-full md:h-48 lg:h-72" src="./src/images/portfolio/clipboard-webdesign.png" alt="" />
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110" src="./src/images/portfolio/travel-web.jpg" alt="Website Travel pergi ketempat yang indah" />
+                     </div>
                      <div class="p-5 bg-dark/30">
-                        <h4 class="text-2xl font-medium text-white font-DmSans">Nama Wesite</h4>
-                        <span class="text-xl text-gray-500 font-DmSans">Mobile app</span>
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Travel Web Landing Page</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">Web Developer</span>
                      </div>
                   </div>
-               </div>
+               </a>
                <!-- Card Portfolio -->
 
                <!-- Card Portfolio -->
-               <div class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3">
+               <a href="https://clipboard-mri.netlify.app/" target="_blank" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
                   <div class="h-full overflow-hidden rounded-lg">
-                     <img class="object-cover object-center w-full md:h-48 lg:h-72" src="./src/images/portfolio/clipboard-webdesign.png" alt="" />
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img
+                           class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110"
+                           src="./src/images/portfolio/clipboard-landingpage.jpg"
+                           alt="Clipboard challenge from front end mentor"
+                        />
+                     </div>
                      <div class="p-5 bg-dark/30">
-                        <h4 class="text-2xl font-medium text-white font-DmSans">Nama Wesite</h4>
-                        <span class="text-xl text-gray-500 font-DmSans">Mobile app</span>
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Clipboard Web Landing Page</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">Web Developer</span>
                      </div>
                   </div>
-               </div>
+               </a>
                <!-- Card Portfolio -->
 
                <!-- Card Portfolio -->
-               <div class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3">
+               <a href="https://rauliqbal1.netlify.app/" target="_blank" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
                   <div class="h-full overflow-hidden rounded-lg">
-                     <img class="object-cover object-center w-full md:h-48 lg:h-72" src="./src/images/portfolio/clipboard-webdesign.png" alt="" />
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110" src="./src/images/portfolio/resume-uiux.jpg" alt="website poersonal portfolio" />
+                     </div>
                      <div class="p-5 bg-dark/30">
-                        <h4 class="text-2xl font-medium text-white font-DmSans">Nama Wesite</h4>
-                        <span class="text-xl text-gray-500 font-DmSans">Mobile app</span>
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Personal Portfolio Website</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">Web Developer</span>
                      </div>
                   </div>
-               </div>
+               </a>
+               <!-- Card Portfolio -->
+
+               <!-- Card Portfolio -->
+               <a href="https://rauliqbal.github.io/beliayamcom/" target="_blank" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
+                  <div class="h-full overflow-hidden rounded-lg">
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110" src="./src/images/portfolio/beliayam-develop.jpg" alt="Beliayam daging ayam berkualitas tinggi" />
+                     </div>
+                     <div class="p-5 bg-dark/30">
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Beliayam Website</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">Web Developer</span>
+                     </div>
+                  </div>
+               </a>
+               <!-- Card Portfolio -->
+
+               <!-- Card Portfolio -->
+               <a href="" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
+                  <div class="h-full overflow-hidden rounded-lg">
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110" src="./src/images/portfolio/needfood.jpg" alt="design app for order food" />
+                     </div>
+                     <div class="p-5 bg-dark/30">
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Need Food App Design</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">App Design</span>
+                     </div>
+                  </div>
+               </a>
+               <!-- Card Portfolio -->
+
+               <!-- Card Portfolio -->
+               <a href="" class="w-full p-0 md:p-4 md:w-1/2 lg:w-1/3 group">
+                  <div class="h-full overflow-hidden rounded-lg">
+                     <div class="object-cover object-center w-full overflow-hidden">
+                        <img class="transition-all duration-300 ease-in-out md:h-48 lg:h-72 group-hover:rotate-2 group-hover:scale-110" src="./src/images/portfolio/travel-app.jpg" alt="design app for travel app" />
+                     </div>
+                     <div class="p-5 bg-dark/30">
+                        <h4 class="text-2xl font-medium text-white font-DmSans">Travel App Design</h4>
+                        <span class="text-xl text-gray-500 font-DmSans">App Design</span>
+                     </div>
+                  </div>
+               </a>
                <!-- Card Portfolio -->
             </div>
          </div>
@@ -301,23 +358,44 @@
       <!-- END:Section Testimoni -->
 
       <!-- Blur effect -->
-      <span class="absolute left-0 -mt-[54rem] blur-2xl w-auto md:w-[400px] opacity-70 z-[-1]"><img src="./src/images/design/blur4.svg" alt="" /></span>
+      <span class="absolute left-0 -mt-[25rem] blur-2xl w-auto opacity-70 z-[-1]"><img src="./src/images/design/blur4.svg" alt="" /></span>
       <!-- Blur effect -->
 
       <!-- START:Section Contact -->
       <section class="container px-4">
          <div class="flex flex-col justify-center">
-            <h3 class="text-center section-title w-full mx-auto md:w-[40rem]">
+            <h3 class="text-lg text-center font-semibold mx-auto text-white font-DmSans md:text-4xl tracking-wide md:w-[40rem]">
                Let me know if you want to talk about your project. <br />
                We're available for freelance work.
             </h3>
             <div class="flex items-center justify-center mt-6 text-yellow-300 transition-all duration-300 hover:text-yellow-500">
-               <a class="text-xl" href="#">Let's Make or Design Your Website </a>
+               <a class="text-base md:text-3xl" href="#">Let's Make or Design Your Website </a>
                <ion-icon class="ml-1 group-hover:ml-2" name="arrow-forward-outline"></ion-icon>
             </div>
          </div>
       </section>
       <!-- END:Section Contact -->
+
+      <!-- START:Section Footer -->
+      <footer class="bg-dark/40" id="footer">
+         <div class="flex flex-col justify-center py-8">
+            <h3 class="text-2xl font-semibold tracking-wide text-center text-white font-DmSans md:text-4xl">Lets Talk With Me!</h3>
+            <h5 class="mt-8 text-base text-center md:text-2xl text-slate-300">
+               I'm always open to discuss your project, <br />
+               I help you as much as I can
+            </h5>
+            <div class="flex flex-row justify-center gap-8 mt-8">
+               <a class="text-3xl text-white transition-all focus:text-yellow-500 hover:scale-110 hover:text-yellow-300" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+               <a class="text-3xl text-white transition-all focus:text-yellow-500 hover:scale-110 hover:text-yellow-300" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+               <a class="text-3xl text-white transition-all focus:text-yellow-500 hover:scale-110 hover:text-yellow-300" href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+               <a class="text-3xl text-white transition-all focus:text-yellow-500 hover:scale-110 hover:text-yellow-300" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+         </div>
+         <div class="py-8 bg-dark/40">
+            <h6 class="text-base text-center text-slate-300">Copyright © 2022 Design By Rauliqbal</h6>
+         </div>
+      </footer>
+      <!-- END:Section Footer -->
 
       <!-- Script JS -->
       <!-- Initialize Swiper -->
@@ -325,10 +403,10 @@
       <script>
          var swiper = new Swiper(".mySwiper", {
             centeredSlides: true,
-            autoplay: {
-               delay: 5500,
-               disableOnInteraction: false,
-            },
+            // autoplay: {
+            //    delay: 5500,
+            //    disableOnInteraction: false,
+            // },
             pagination: {
                el: ".swiper-pagination",
             },
